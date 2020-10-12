@@ -86,7 +86,7 @@ while szam > 0:
 nevsor = ['Pista', 'Kata', 'Tibor']
 
 
-# a for ciklust legtbbször arra használjuk, hogy végig menjünk
+# a for ciklust legtöbbször arra használjuk, hogy végig menjünk
 # egy lista összes elemén és az elemeken valamilyen műveletet
 # végezzünk:
 for nev in nevsor:
