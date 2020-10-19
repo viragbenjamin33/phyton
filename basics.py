@@ -122,3 +122,18 @@ def divisible_by_three_better(num):
      
 print(divisible_by_three_better('4'))
 print(divisible_by_three_better('sdasaw'))
+
+# 0-tól 4-ig megy
+for i in range(5):
+    #az end paraméter a string végére beteszi amit aposztrofok közé írtunk
+    print(i, end=', ')
+
+print('\n')
+# 5-től 9-ig:
+for i in range(5, 10):
+  print(i, end=', ')
+
+print('\n')
+#5-től 25-ig 2-essével:
+for i in range(5, 25, 2):
+  print(i, end=', ')
