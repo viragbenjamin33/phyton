@@ -31,7 +31,7 @@ print(type(szoveg2))
 
 
 print ('a szoveg erteke: {} a szoveg2 valtozo erteke {}' .format(szoveg, szoveg2))
-# létrehozzuk a sza nevű változót és az érték amit kap ez a változó, 
+# létrehozzuk a szam nevű változót és az érték amit kap ez a változó, 
 # az egy szám lesz (nincs körülötte '' v "")
 # dinamically typed programming language: a változók típusát
 # létrehozáskor (deklaráláskor) automatikusan megpróbálja kitalálni 
@@ -97,3 +97,28 @@ for index, nev in enumerate(nevsor):
   print('{} : {}' .format(index, nev))
 
 print('a nevsor nulladik eleme: {}' .format(nevsor[0]))
+
+def divisible_by_three(num):
+    if type(num) != int:
+      return 'nem számot kaptam'      
+    if num % 3 == 0:
+      #early return
+      return True
+    return False
+
+print(divisible_by_three(9))
+print(divisible_by_three(4))
+
+print(divisible_by_three('4'))
+
+def divisible_by_three_better(num):
+    try:
+        num = int(num)
+        if num % 3 == 0:
+          return True
+        return False
+    except ValueError:
+        return 'nem számot kaptam'
+     
+print(divisible_by_three_better('4'))
+print(divisible_by_three_better('sdasaw'))
